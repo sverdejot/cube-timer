@@ -1,8 +1,15 @@
 .scramble {
+    cursor: pointer;
     font-family: 'Consolas';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     text-align: center; 
     margin-top: 40px;
+    transition: 0.25s;
+}
+
+.scramble:hover {
+    color: tomato;
+    transition: 00.25s;
 }
