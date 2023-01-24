@@ -1,0 +1,14 @@
+.registry-title {
+    text-align: center;
+    font-family: Jost;
+    font-weight: 900;
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+.registry-table {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    font-family: Jost;
+}

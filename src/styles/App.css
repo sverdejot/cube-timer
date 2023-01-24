@@ -27,22 +27,3 @@ body {
 p {
     text-align: center;
 }
-
-.title {
-    text-align: center;
-    font-family: Jost;
-    font-style: normal;
-    font-size: 60px;
-    font-weight: bold;
-}
-
-div.times-table {
-    margin: auto;
-    width: 80%;
-    height: 150px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-}
-
-

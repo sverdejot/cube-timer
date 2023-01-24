@@ -1,7 +1,12 @@
-import { Timer } from './Timer'
+import { Timer } from './sections/timer/Timer'
+import { TimesRegistry } from './sections/registry/TimesRegistry'
+
+import './styles/App.css'
 
 export function App() {
   return (
-    <Timer/>
+    <div className="card">
+      <Timer/>
+    </div>
   )
 }

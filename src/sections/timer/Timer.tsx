@@ -1,36 +1,24 @@
-import React from "react";
-
-import './styles/card.css'
+import './styles/timer.css'
 
 import { Header } from "./Header";
-import { SolveTime } from "./SolveTime";
 import { Scramble } from "./Scramble";
 import { TimesTable } from "./TimesTable";
-
-const response = {
-    "userId": "7200bb99-b07f-4a8e-8e49-fc6c1970da3b",
-    "useInspection": true,
-    "solves": [
-        {
-            "ts": 1673722953,
-            "scramble": "U D2 B L2 B' U2 B' L2 D2 B' L2 D2 F L' B U' B F' D2 B' F'",
-            "solveTime": 15.02
-        },
-        {
-            "ts": 1642183353,
-            "scramble": "U D2 B L2 B' U2 B' L2 D2 B' L2 D2 F L' B U' B F' D2 B' F'",
-            "solveTime": 18.98
-        }
-    ]
-}
+import { Stopwatch } from './Stopwatch';
 
 export function Timer() {
+    
+    const handleStopWatch = function({running}: {running: Boolean}) {
+        if (running) {
+            
+        }
+    }
+
     return (
-        <div className="card">
-            <Header/>
+        <>
+            <Header />
 
             <section>
-                <div style={{textAlign: 'center'}}>           
+                <div style={{ textAlign: 'center' }}>
                     <span className="title">
                         <span style={{ color: '#004E90' }}>R</span>
                         <span style={{ color: '#FFE156' }}>u</span>
@@ -44,17 +32,16 @@ export function Timer() {
             </section>
 
             <section>
-                <Scramble/>
-            </section>
-            
-            <section>
-                <SolveTime/>
+                <Scramble scramble={"U D R U B' U2 F' D2 R U F2 U' L2 U2 R2 B2 L2 B2 U' L2 B2"} />
             </section>
 
             <section>
-                <TimesTable/>
+                <Stopwatch/>
             </section>
-                     
-        </div>
+
+            <section>
+                <TimesTable last={15.58} avg5={19.56} avg12={21.36}/>
+            </section>
+        </>
     )
 }
